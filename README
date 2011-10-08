@@ -1,0 +1,13 @@
+This is an anki plugin that scrapes a field of an anki deck and glosses
+the content of that field using wwwjdic's glossing feature, and makes a
+new deck out of the glosses.
+
+This turned out to be a terrible idea. The glossing service does not do
+morphological analysis, and thus can't determine the correct reading.
+The result is a very inaccurate representation of that deck's vocabulary.
+
+A better idea would be to use mecab, and then find definitions or sentences
+for the words in some other way. In any case, the concept of senseless
+generation of vocab decks is typically frowned upon, so this was not a
+great idea to begin with. The code is kept here for future reference on
+some techniques used to interact with anki programmatically.
